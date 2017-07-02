@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>Стр 6</title> 
+<link rel="stylesheet" href="style.css" > 
+</head> 
+<body> 
+<header> 
+<input type="checkbox" name="checkbox1" id="input1" checked> 
+<label for="input1" id="label1">Menu</label> 
+<div class="line1"></div> 
+<ul> 
+<a href="q1.html">Стр 1</a><br> 
+<a href="q2.html">Стр 2</a><br> 
+<a href="q3.html">Стр 3</a><br> 
+<a href="q4.html">Стр 4</a><br> 
+<a href="q5.html">Стр 5</a><br>
+<a href="q6.html">Стр 6</a>
+</ul>
+</header> 
+
+<div class="content"> 
+<a href="#">
+<img src="IMG_2059.png" class="nusha" height="200" width="200"></img>
+</a>
+</div> 
+<style>
+body { 
+margin: 0 0 0 0; 
+padding: 0 0 0 0; 
+font-family: verdana, sans-serif; 
+background-color: #000; 
+color: #fff; 
+} 
+
+#input1 { 
+display: none; 
+} 
+
+#input1:checked ~ ul { 
+display: none; 
+} 
+
+.line1 { 
+box-shadow: 0px 0px 2px 2px #69FFFC; 
+background-color: #CFFCFC; 
+margin: 10px 0 0 0; 
+} 
+
+#label1 { 
+font-size: 20px; 
+margin: 10px 10px 10px 10px; 
+color: #69FFFC; 
+} 
+
+ul { 
+box-shadow: 0px 0px 2px 2px #69FFFC; 
+color: #69FFFC; 
+float: left; 
+margin: 0 0 0 10px; 
+padding: 5px 5px 5px 5px; 
+z-index: 1; 
+position: absolute; 
+background-color: #000; 
+} 
+
+a { 
+text-decoration: none; 
+color: #69FFFC; 
+z-index: 2; 
+background-color: #000;
+} 
+
+.content { 
+z-index: 1; 
+position: absolute; 
+border-left: 1px solid #CFFCFC; 
+border-right: 1px solid #CFFCFC; 
+border-bottom: 1px solid #CFFCFC; 
+box-shadow: 0px 0px 2px 2px #69FFFC; 
+height: 1000px; 
+width: 1150px; 
+top: 60px; 
+left: 50px; 
+}
+
+.nusha {
+border: 1px solid #69FFFC;
+box-shadow: 0px 0px 2px 2px #69FFFC;
+transition: 0.5s;
+margin: 50px 25px 50px 50px;
+}
+
+
+.nusha:hover {
+height: 220px;
+width: 220px;
+}
+</style>
+</body> 
+</html>
